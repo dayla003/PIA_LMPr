@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'mi_peliculas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'peliculasdb',
+        'USER': 'day',
+        'PASSWORD': 'mariana',
+        'HOST': 'localhost',
+        'PORT':'3306',
     }
 }
 

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block titulo %} Peliculas {% endblock %}
+
+{% block contenido %}
+<h2 class="mb-4">LIstado de Películas</h2>
+    <div class="row">
+      {% for pelicula in peliculas %}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="{{ pelicula.imagen }}" class="card-img-top" alt="{{ pelicula.titulo }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ pelicula.titulo }}</h5>
+            <p class="card-text">{{ pelicula.descripcion }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+{% endblock %}
