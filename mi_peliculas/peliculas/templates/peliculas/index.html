@@ -17,6 +17,8 @@
         <p class="card-text">{{ pelicula.genero }}</p>
         <p class="card-text">{{ pelicula.fecha_estreno }}</p>
         <p class="card-text">{{ pelicula.sipnosis }}</p>
+        <a name="" id="" class="btn btn-info" href="{% url 'editar' pelicula.id %}" role="button">Editar</a>
+        <a name="" id="" class="btn btn-danger" href="{% url 'eliminar' pelicula.id %}" role="button">Borrar</a>
       </div>
     </div>
   </div>
