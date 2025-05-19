@@ -4,19 +4,23 @@
 {% block titulo %} Peliculas {% endblock %}
 
 {% block contenido %}
-<h2 class="mb-4">LIstado de Películas</h2>
-    <div class="row">
-      {% for pelicula in peliculas %}
-      <div class="col-md-4 mb-4">
-        <div class="card h-100">
-          <img src="{{ pelicula.imagen }}" class="card-img-top" alt="{{ pelicula.titulo }}">
-          <div class="card-body">
-            <h5 class="card-title">{{ pelicula.titulo }}</h5>
-            <p class="card-text">{{ pelicula.descripcion }}</p>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
+
+{% for pelicula in peliculas %}
+<div class="card mb-3" style="max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ pelicula.imagen.url }}" class="img-fluid rounded-start" alt="...">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ pelicula.titulo }}</h5>
+        <p class="card-text">{{ pelicula.genero }}</p>
+        <p class="card-text">{{ pelicula.fecha_estreno }}</p>
+        <p class="card-text">{{ pelicula.sipnosis }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
 
 {% endblock %}
