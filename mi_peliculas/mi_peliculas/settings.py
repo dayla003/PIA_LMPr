@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'peliculasdb',
         'USER': 'day',
         'PASSWORD': 'mariana',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT':'3306',
     }
 }
