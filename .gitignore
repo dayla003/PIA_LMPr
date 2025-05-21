@@ -1,1 +1,77 @@
-myenv/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdm.toml
+*.mypy_cache/
+*.pytest_cache/
+
+# Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+.env
+.env.*
+
+# Django migrations (optional to ignore if you don’t want them versioned)
+**/migrations/*.py
+**/migrations/__pycache__/
+
+# Media / Static
+/media/
+/staticfiles/
+/static/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# macOS
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+pip-wheel-metadata/
+
+# Docker
+*.pid
+*.seed
+*.bak
+*.tar
+docker-compose.override.yml
+# Ignore named volumes
+mysql_data/
+
+# Coverage & testing
+htmlcov/
+.coverage
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Compiled source
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# System files
+Thumbs.db
+ehthumbs.db
